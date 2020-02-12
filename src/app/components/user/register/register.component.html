@@ -1,0 +1,21 @@
+<section id="login" class="">
+        <div class="">
+            <form #registerUser="ngForm" (submit)="onAddUser()">
+                <h1>Registrarse</h1>
+                <div class="">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" [(ngModel)]="email" class="">
+                      </div>
+
+                      <div class="">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" [(ngModel)]="password" class="">
+                      </div>
+                <button type="submit" class="">Comenzar</button>
+                <div class="">
+                    <a routerLink="" class="">Iniciar Sesion</a>
+                </div>
+            
+            </form>                
+       </div>
+     </section>
