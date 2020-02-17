@@ -1,6 +1,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+/**** Formulario ****/ 
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 
 //servicios
@@ -43,15 +45,23 @@ import{ environment } from '../environments/environment';
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
+    NavBarComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule, 
+    
   ],
-  providers: [ AngularFireAuth,],
+  providers: [
+   AngularFireAuth,
+   AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
