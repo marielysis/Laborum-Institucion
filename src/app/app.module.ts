@@ -33,7 +33,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import{ environment } from '../environments/environment';
 
 @NgModule({
-  declarations:[
+  declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
@@ -45,6 +45,10 @@ import{ environment } from '../environments/environment';
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
+    NavBarComponent,
+    FooterComponent,
+    HeaderComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -53,8 +57,12 @@ import{ environment } from '../environments/environment';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule, 
+    
   ],
-  providers: [ AngularFireAuth,],
+  providers: [
+   AngularFireAuth,
+   AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
