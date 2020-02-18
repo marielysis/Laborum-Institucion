@@ -33,7 +33,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import{ environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent,
     LoginComponent,
     RegisterComponent,
@@ -48,7 +48,6 @@ import{ environment } from '../environments/environment';
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
-    
   ],
   imports: [
     BrowserModule,
