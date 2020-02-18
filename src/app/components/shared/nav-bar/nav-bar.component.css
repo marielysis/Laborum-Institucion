@@ -72,6 +72,11 @@ nav li {
     margin-left: 5%;
 }
 
+li a {
+    text-decoration: none;
+    color: #cef8ed;
+}
+
 .btn-second-little {
     -webkit-appearance: none !important;
     color: #00BCA0;

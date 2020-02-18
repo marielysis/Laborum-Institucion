@@ -1,1 +1,88 @@
-<p>management-vacancies works!</p>
+<section class="containerview">
+    <article class="container-form">
+        <form>
+            <span class="inner-addon left-addon">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar empleo" />
+            </span>
+
+            <span class="inner-addon left-addon">
+                    <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Ingresar ubicacion"/>
+            </span>
+
+
+            <select required>
+                <option value="" disabled selected hidden>Estado</option>
+                <option *ngFor="let state of status" [ngValue]="state">{{state}}</option>
+            </select>
+        </form>
+
+        <div class="headerview">
+            <h1>Solicitud de avisos</h1>
+            <div class="subHeaderView">
+                <p>Mas recientes</p>
+                <img src="../../../assets/img/flecha.png" alt="">
+                <img src="../../../assets/img/Filas.png" alt="">
+                <img src="../../../assets/img/Vector.png" alt="">
+            </div>
+
+        </div>
+    </article>
+    <!-- Contenedor de titulos vacantes -->
+    <section class="containervacanciestitles">
+        <div class="titles">
+            <div class="title one">
+                <p>Titulo</p><img src="../../../assets/img/flecha.png" alt="">
+            </div>
+            <div class="title">
+                <p>Estado</p><img src="../../../assets/img/flechablack.png" alt="">
+            </div>
+
+            <div class="title">
+                <p>Publicado</p><img src="../../../assets/img/flechablack.png" alt="">
+            </div>
+            <div class="title">
+                <p>Jornada</p><img src="../../../assets/img/flechablack.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor de general de todo el bloque -->
+    <section class="contaier">
+        <!-- Sub contenedor 1 Contenedor de estados -->
+        <div class="subContainer">
+            <!-- Bloque de vacantes uno -->
+            <article class="vacancies">
+                <div class="containervacancies">
+                    <div>
+                        <img src="../../../assets/img/image.png" alt="">
+                    </div>
+                    <div>
+                        <p>Cargo</p>
+                        <p class="sub-title">Empresa</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Bloque de vacantes uno -->
+            <article>
+                <div class="containervacancies">
+                    <div>
+                        <img src="../../../assets/img/image.png" alt="">
+                    </div>
+                    <div>
+                        <p>Cargo</p>
+                        <p class="sub-title">Empresa</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Sub contenedor 2 Contenedor de estados -->
+        <div class="subContainertwo">
+            <div><img src="../../../assets/img/starVector.png" alt=""></div>
+            <button class="btnapproved">Aprobado</button>
+
+        </div>
+    </section>
+
+</section>
