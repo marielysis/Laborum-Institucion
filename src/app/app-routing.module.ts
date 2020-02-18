@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'vinculacionempresa', component:  LinkCompaniesComponent },
   { path: 'postulantes', component:  PostulantsComponent },
 
+
 ];
 
 @NgModule({
