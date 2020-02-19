@@ -1,6 +1,12 @@
 // registro de usuario
-export class registerUser{ 
-   email:string;
-   password: string;
-     
-}
+// export class loginForm{ 
+//    email:string;
+//    password: string;
+//    remember: false; 
+// }
+
+// export class registerForm{ 
+//    email:string;
+//    password: string;
+//    remember: false; 
+// }

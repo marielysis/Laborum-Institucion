@@ -1,0 +1,16 @@
+.login-container{
+    display: flex;
+    margin-left:8%;
+    flex-direction: column;
+    width: 90%;
+}
+.login-h3 {
+    color: #2A303A;
+    text-align: left;
+    width: 277px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 12%;
+}
+
