@@ -22,7 +22,10 @@ import { PostulantsComponent } from './components/postulants/postulants.componen
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
 
 //firebase
 import { AngularFireModule } from '@angular/fire'; // Firebase config
@@ -36,13 +39,15 @@ import { SelectComponent } from './components/user/select/select.component';
 import { ContenedorLoginComponent } from './components/user/contenedor-login/contenedor-login.component';
 import { ContenedorRegisterComponent } from './components/user/contenedor-register/contenedor-register.component';
 
-
-
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent,
     LoginComponent,
+<<<<<<< HEAD
     RegisterComponent,
+=======
+    RegisterComponent
+>>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
     HomeComponent,
     ProfileComponent,
     ManagementVacanciesComponent,
@@ -51,10 +56,13 @@ import { ContenedorRegisterComponent } from './components/user/contenedor-regist
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
+<<<<<<< HEAD
     SelectComponent,
     ContenedorLoginComponent,
     ContenedorRegisterComponent,
     
+=======
+>>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
   ],
   imports: [
     BrowserModule,
