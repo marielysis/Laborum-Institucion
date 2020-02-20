@@ -1,23 +1,15 @@
-
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-import { ReactiveFormsModule } from '@angular/forms';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-=======
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+
 /**** Formulario ****/ 
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
->>>>>>> 47b1ef15bfba49cdbad7ae41b78dd449a290ab16
 
-//servicios
+//servicio
 import { AuthService } from './services/auth.service';
 
-<<<<<<< HEAD
 //Rutas
-=======
-//
->>>>>>> 47b1ef15bfba49cdbad7ae41b78dd449a290ab16
 import { AppRoutingModule } from './app-routing.module';
 
 //componentes
@@ -32,46 +24,24 @@ import { PostulantsComponent } from './components/postulants/postulants.componen
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeaderComponent } from './components/shared/header/header.component';
-<<<<<<< HEAD
 
-=======
->>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
-
-//firebase
-import { AngularFireModule } from '@angular/fire'; // Firebase config
-import { AngularFirestoreModule } from '@angular/fire/firestore'; // For Cloud Firestore
-import { AngularFireAuth } from '@angular/fire/auth';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-
-<<<<<<< HEAD
-// environment config
-import{ environment } from '../environments/environment';
-import { SelectComponent } from './components/user/select/select.component';
-import { ContenedorLoginComponent } from './components/user/contenedor-login/contenedor-login.component';
-import { ContenedorRegisterComponent } from './components/user/contenedor-register/contenedor-register.component';
-=======
-//firebase
+//Modulos de firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule }  from '@angular/fire/storage';
+
+
 
 // environment config
 import{ environment } from '../environments/environment';
->>>>>>> 47b1ef15bfba49cdbad7ae41b78dd449a290ab16
 
 @NgModule({
   declarations:[
     AppComponent,
     LoginComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
     RegisterComponent,
-=======
-    RegisterComponent
->>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
-=======
-    RegisterComponent,
->>>>>>> 47b1ef15bfba49cdbad7ae41b78dd449a290ab16
     HomeComponent,
     ProfileComponent,
     ManagementVacanciesComponent,
@@ -80,28 +50,6 @@ import{ environment } from '../environments/environment';
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    SelectComponent,
-    ContenedorLoginComponent,
-    ContenedorRegisterComponent,
-    
-=======
->>>>>>> ac261d7129c453e7b5fe6d6ce5fb12dadbf0aec8
-  ],
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    NgbModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),// Import firebase
-    AngularFireAuthModule,
-    AngularFirestoreModule, // Import firestore
-    AppRoutingModule,
-  ],
-  providers: [ 
-    AngularFireAuth,
-    AuthService ],
-=======
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
@@ -113,13 +61,17 @@ import{ environment } from '../environments/environment';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule, 
+    AngularFirestoreModule,  // Necesario para las funciones de base de datos
+    AngularFireStorageModule // Necesario para las funciones de almacenamiento de imagenes
     
   ],
+
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
+
   providers: [
    AngularFireAuth,
    AuthService
   ],
->>>>>>> 47b1ef15bfba49cdbad7ae41b78dd449a290ab16
   bootstrap: [AppComponent]
 })
 export class AppModule { }
