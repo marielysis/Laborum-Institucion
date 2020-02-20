@@ -1,67 +1,171 @@
-<div class="containerInstitutionProfile">
+<!-- <div class="containerview col-1"></div>
+  <h2>Perfil Institución</h2>
+  <div class="imgPerfilInst col-2">
 
-  
-      <h2>Perfil Institución</h2>
-      <div class="imgPerfilInst col-1">
-    
-        <div class="logo">
-        <img href='' alt=''>
-        <h2 class="titleComponent">Sube tu logo</h2>
-        <p class="texLabelInput">Esta foto aparecerá en tu perfil. Debe medir 235px x 65px</p>
-        <div class="color">
+    <div class="logo">
+      <img href='' alt=''>
+      <h2 class="titleComponent">Sube tu logo</h2>
+      <p class="texLabelInput">Esta foto aparecerá en tu perfil. Debe medir 235px x 65px</p>
+      <div class="color">
         <img href='' alt=''>
         <h2 class="titleComponent">Escoge color</h2>
         <p class="texLabelInput">Se sugiere que sea el color corporativo </p>
-          <div class="inicio">
-        <img href='' alt=''>
-        <h2 class="titleComponent">Sube tu foto de inicio</h2>
-        <p class="texLabelInput">Esta foto aparecerá en tu login de bolsa de trabajo. Debe medir 975px x 720px</p>
+        <div class="inicio">
+          <img href='' alt=''>
+          <h2 class="titleComponent">Sube tu foto de inicio</h2>
+          <p class="texLabelInput">Esta foto aparecerá en tu login de bolsa de trabajo. Debe medir 975px x 720px</p>
+
+        </div>
+
+
+        <div class="institutionData">
+
+          <img href='' alt=''>
+          <!-- Formulario reactivo 
+          <form [formGroup]="form" (ngSubmit)="save($event)">
+          <div class="fileinfo1">
+            <label>Nombre de la Institución</label>
+            <input type='text' formControlName="name" />
+            <label>Razón Social</label>
+            <input type='text' formControlName="businessName" />
+          </div>
+          <div class="fileinfo2">
+            <label>Dirección</label>
+            <input type='text' formControlName="address" />
+            <label>Ciudad</label>
+            <input type='text' formControlName="city" />
+            <label>País</label>
+            <input type='text' formControlName="country" />
+          </div>
+          <div class="fileinfo3">
+            <label>Fecha de Registro (No editable)</label>
+            <input type="date" formControlName="registrationDate" />
+            <label>Última modificación (No editable)</label>
+            <input type='date' formControlName="lastModificationDate" />
+          </div>
+          <hr />
+          <div class="decription">
+            <label>Breve descripción de la Institución</label>
+            <textarea cols="60" rows="10" formControlName="description" ></textarea>
+          </div>
+          <div>
+            <button class="btnColor">Atrás</button> 
+          </div>
+          <button type="Submit" [disabled]="form.invalid" class="btnColor"><a [routerLink]="['/profilecont']">Siguiente</a></button>
+        </form>
+        </div>
+
+          
+
+      </div> -->
+
+
+      <!-- profile institucion react -->
+
+<div class="containerInstitutionProfile col-9">
+
+        <section class="title">
+          <h2>Perfil Institución</h2>
+          
+        </section>
     
-      </div>
+  <div class="contDatos">
+      <section class="imgPerfilInst">
+            <div class="logo">
+            <img href='' alt=''>
+            <h2 class="titleimgPerfilInst">Sube tu logo</h2>
+            <p class="textimgPerfilInst">Esta foto aparecerá en tu perfil. Debe medir 235px x 65px</p>
+          </div>
+            <div class="color">
+            <img href='' alt=''>
+            <h2 class="titleimgPerfilInst">Escoge color</h2>
+            <p class="textimgPerfilInst">Se sugiere que sea el color corporativo </p>
+          </div>
+            <div class="inicio">
+            <img href='' alt=''>
+            <h2 class="titleimgPerfilInst">Sube tu foto de inicio</h2>
+            <p class="textimgPerfilInst">Esta foto aparecerá en tu login de bolsa de trabajo. Debe medir 975px x 720px</p>
+            </div>
+          </section>
+        <div class="modification"> 
+          <img href='' alt=''>
+        </div>
     
-      <div class="modification"> <img href='' alt=''></div>
+          <div class="institutionData">
+          
+            <img href='' alt=''>
+            <h2 class="subtitle">Datos Institución </h2>
+            <form [formGroup]="form" (ngSubmit)="save($event)">
+            <section class="fileinfo1">
+              <section class="fileinfo1-1">
+                <p>Nombre de la Institución</p> 
+                <input class="input-text" type="text" formControlName="name"/>
+              </section>
+              <section class="fileinfo1-2">
+                <p>Razón Social</p> 
+                <input class="input-text" type='text'formControlName="businessName" />
+              </section>
+            </section>
     
-      <div class="institutionData">
+            <section class="fileinfo2">
+              <section class="fileinfo2-1">
+                <p>Dirección</p>
+                <input class="input-text" type='text' formControlName="address" />
+              </section>
+              <section class="fileinfo2-2"> 
+                <p>Ciudad</p>
+                <input  class="input-text" type='text' formControlName="city"/>
+              </section>  
+              <section class="fileinfo2-3">
+                <p>País</p>
+                <input class="input-text" type='text'formControlName="country"/>
+              </section>  
+            </section>
     
-        <img href='' alt=''>
-        <div class="fileinfo1">
-        <label>Nombre de la Institución</label>
-        <input type='text'/>
-        <label>Razón Social</label>
-        <input type='text'/>
-        </div>
-        <div class="fileinfo2">
-        <label>Dirección</label>
-        <input type='text'/>
-        <label>Ciudad</label>
-        <input type='text'/>
-        <label>País</label>
-        <input type='text'/>
-        </div>
-        <div class="fileinfo3">
-        <label>Fecha de Registro (No editable)</label>
-        <input type="date"/>
-        <label>Última modificación (No editable)</label>
-        <input type='date'/>
-        </div>
-        <hr/>
-        <div class="decription">
-        <label>Breve descripción de la Institución</label>
-        <input class="" type="textarea"/>
-        </div>
-        <div class="google">
-        <label>Google Analytics</label></div>
-        <input type='text'/>
-        <div class="count"> 
-        <p class="num">0</p>
-        <p class="textcount">Avisos</p>
-        <p class="num">0</p>
-        <p class="textcount">Vínculos</p>
-        <p class="num">0</p>
-        <p class="textcount">Postulantes</p> 
-        </div>
-      </div>
-    <div ><button class="btnColor">Atrás</button> <button class="btnColor">Siguiente</button></div>
-  
-    </div>
-  
+            <section class="fileinfo3">
+              <section class="fileinfo3-1">
+                <p>Fecha de Registro (No editable)</p>
+                <input class="input-date" type='date' formControlName="registrationDate"/>
+              </section>
+              <section class="fileinfo3-2">
+                <p>Última modificación (No editable)</p>
+                <input class="input-date" type='date' formControlName="lastModificationDate"/>
+              </section>
+            </section>
+            
+            <div class="container-info">
+            <section class ="description">
+              <p>Breve descripción de la Institución</p>
+              <textarea class="input-textarea" type='textarea' formControlName="description"></textarea>
+            </section>
+            <section class="cont-analitics">
+              <section class="google">
+                <p>Google Analytics</p>
+                <input class="input-text" type='text' formControlName="analytics">
+              </section>
+    
+     
+            </section>
+            </div>
+            <section class="buttonpag">
+              <button class="btn-atras">Atrás</button>
+              <button class="btn-next" type="Submit" >Siguiente</button>
+            </section>
+          </form>
+          <div class="count"> 
+              <section class="counter">
+                <p class="num">0</p>
+                <p class="textcount">Avisos</p>
+              </section>  
+              <section class="counter"> 
+                <p class="num">0</p>
+                <p class="textcount">Vínculos</p>
+              </section>   
+              <section class="counter">
+                <p class="num">0</p>
+                <p class="textcount">Postulantes</p> 
+                </section>  
+              </div>
+          </div>
+  </div>
+</div>

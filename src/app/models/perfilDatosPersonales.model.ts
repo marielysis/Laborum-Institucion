@@ -9,6 +9,15 @@ export class contactDataProfile{
     description:string;
     startPhoto:string;
     photo:string;
-    
-  
+    registrationDate:string;
+    lastModificationDate:string;
+
+    email:string;
+    phone:string;
+    additionalPhone:string;
+    webPage:string;
+    facebook:string;
+    linkedin:string;
+    Youtube:string;
+    twitter:string;
 }

@@ -2,8 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 /**** Formulario ****/ 
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule }   from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 //servicios
 import { AuthService } from './services/auth.service';
@@ -31,6 +30,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 
 // environment config
 import{ environment } from '../environments/environment';
+import { ProfileContComponent } from './components/profile/profile-cont/profile-cont.component';
 
 @NgModule({
   declarations:[
@@ -48,6 +48,7 @@ import{ environment } from '../environments/environment';
     NavBarComponent,
     FooterComponent,
     HeaderComponent,
+    ProfileContComponent,
   ],
   imports: [
     BrowserModule,
